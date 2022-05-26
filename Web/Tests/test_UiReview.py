@@ -41,23 +41,22 @@ class TestReview(Base):
                 allure.attach(driver.get_screenshot_as_png(),
                               name="title dont match!!", attachment_type=allure.attachment_type.PNG)
 
-    # def test_ui_table_title(self):
-    #     # setup call driver ReviewPage
-    #     driver = self.driver
-    #     print("login successfully")
-    #     page = ReviewPage(driver)
-    #     # tensfer to review page
-    #     page.click_review_page()
-    #     # get table text
-    #     print("get title text")
-    #     value = page.Ui_table_title()
-    #     try:
-    #         assert value == "full name	barber name	review"
-    #     finally:
-    #         if (AssertionError):
-    #             allure.attach(driver.get_screenshot_as_png(),
-    #                           name="title dont match!!", attachment_type=allure.attachment_type.PNG)
-
+    def test_ui_table_title(self):
+        # setup call driver ReviewPage
+        driver = self.driver
+        print("login successfully")
+        page = ReviewPage(driver)
+        # tensfer to review page
+        page.click_review_page()
+        # get table text
+        print("get title text")
+        value = page.Ui_table_title()
+        try:
+            assert value == "full name	barber name	review"
+        finally:
+            if (AssertionError):
+                allure.attach(driver.get_screenshot_as_png(),
+                              name="title dont match!!", attachment_type=allure.attachment_type.PNG
 
 
 
