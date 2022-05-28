@@ -1,5 +1,0 @@
-
-login successfully
-get title text
------------------------------------------
-Tests is finished

@@ -56,7 +56,7 @@ class TestReview(Base):
         finally:
             if (AssertionError):
                 allure.attach(driver.get_screenshot_as_png(),
-                              name="title dont match!!", attachment_type=allure.attachment_type.PNG
+                              name="title dont match!!", attachment_type=allure.attachment_type.PNG)
 
 
 
